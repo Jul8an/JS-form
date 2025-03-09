@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="pagina.css">
+    <link rel="stylesheet" type="text/css"  href="fonts.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <title>Formulario Glass Effect</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="icon" href="minecraft-icon.ico">
+</head>
+<body>
+    <style>
+        .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+        }
+        </style>
+    <!-- <h1 style="color: aliceblue;">SOS CRACK, VOS PODES, SEGUÍ ESTUDIANDO</h1> -->
+    <div class="wrapper">
+        <form class="form form__front" onsubmit="return false;">
+            <h3 class="form__title">Bienvenido  de nuevo aventurero...</h3>
+            <div class="input__box">
+                <input placeholder="Usuario" type="text" id="checkUserName">
+                <span class="material-symbols-outlined">person</span>
+            </div>
+            <div class="input__box">
+                <input placeholder="Contraseña" type="password" id="checkUserPassword">
+                <span class="material-symbols-outlined">lock</span>
+            </div>
+            <p class="form__p">¿Eres nuevo? <a id="front-A" href="#">¡Registrate!</a></p>
+            <button id="logInButton">Iniciar sesión</button>
+        </form>
+        <form class="form form__back" onsubmit="return false;">
+            <h3 class="form__title form__back__title">¡Un mundo de aventuras te está esperando!</h3>
+            <div class="input__box input__box__back" id="user">
+                <input placeholder="Usuario" type="text" id="createUserName">
+                <span class="material-symbols-outlined">person</span>
+            </div>
+            <div class="input__box input__box__back">
+                <input type="email" placeholder="Email" id="saveUserEmail">
+                <span class="material-symbols-outlined">
+                    mail
+                    </span>
+            </div>
+            <div class="input__box input__box__back">
+                <input placeholder="Contraseña" type="password" id="createUserPassword">
+                <span class="material-symbols-outlined">lock</span>
+            </div>
+            <p class="form__p">¿Ya empezaste tu aventura? <a id="back-A" href="#">¡Inicia sesión!</a></p>
+            <button id="createUserButton">Crear cuenta</button>
+        </form>
+    </div>
+<script src="codigo.js"></script><script src="codigo1.js"></script></body>
+</html>

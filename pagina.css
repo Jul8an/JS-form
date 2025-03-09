@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+html, body {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+body {
+    background-image: url(minecraft.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fffa;
+}
+
+.wrapper {
+    position: relative;
+    height: 500px;
+    width: 400px;
+    margin-top: 6rem;
+    margin-right: auto;
+    margin-left: auto;
+    color: inherit;
+    border-radius: 15px;
+}
+
+.form {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(.3rem);
+    border-radius: 15px;
+    border: 1px solid #fff5;
+    box-shadow: -2px 4px 8px 0px #1118;
+}
+
+.form__title {
+    padding: 1rem;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    height: fit-content;
+}
+
+.input__box {
+    position: relative;
+    width: 100%;
+    height: 2.5rem;
+    margin: 1.2rem;
+    border: #fffa;
+    border-radius: 4px;
+    padding-left: .5rem;
+    border-bottom: 1px solid #fff;
+    border-radius: 4px;
+    box-shadow: -2px 4px 8px 0px #1118;
+}
+
+.input__box input {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: inherit;
+}
+
+.input__box span {
+    position: absolute;
+    top: 8px;
+    right: .5rem;
+}
+
+.input__box input::placeholder {
+    color: inherit;
+}
+
+.form__p {
+    margin-top: .8rem;
+    width: 100%;
+    text-align: center;
+}
+
+.form__p a, .epico-h1 span {
+    color: inherit;
+}
+
+.form__p a:hover, .epico-h1 span:hover {
+    color: #fffc;
+}
+
+.form__p a:active, .epico-h1 span:active {
+    color: inherit;
+}
+
+.form__p a:visited, .epico-h1 span:visited {
+    color: inherit;
+}
+
+.form button {
+    width: 40%;
+    height: 3rem;
+    color: inherit;
+    border-radius: 10px;
+    border: 1px solid #fffa;
+    background: #eee1;
+    margin: auto;
+    margin-top: 3.5rem;
+}
+
+.form button:hover {
+    background: #eee2;
+}
+
+.form button:active {
+    background: #eee3;
+}
+
+.form__front {
+    transform: perspective(1000px) rotateY(0deg);
+    transition: transform 1s;
+}
+
+.form__back {
+    position: absolute;
+    top: 0;
+    transform: perspective(1000px) rotateY(180deg);
+    transition: transform 1s;
+}
+
+.form__back__title {
+    margin-top: 1.5rem;
+    margin-bottom: .7rem;
+}
+
+.input__box__back {
+    margin: .9rem;
+}
+
+.form__back button {
+    margin-top: 2.4rem;
+}
+
+.turn-around {
+    transform: perspective(1000px) rotateY(180deg);
+    transition: 1s;
+}
+
+.turn-back {
+    transform:  perspective(1000px) rotateY(360deg);
+    transition: 1s;
+}
+
+@keyframes out {
+    0% {
+        opacity: 1;
+    } 66% {
+        opacity: 1;
+    } 100% {
+        opacity: 0;
+    }
+}
+
+.epico-h1{
+    text-align: center;
+    color: #fffa;
+}
+
+.epico-h1 span {
+    text-decoration: underline;
+    user-select: none;
+}
